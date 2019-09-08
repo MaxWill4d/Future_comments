@@ -1,4 +1,5 @@
 <?php
+    date_default_timezone_set('Europe/Moscow');
    require_once 'db.php';
 
    if (!empty($_POST['comment_submit']))//создать коммент
@@ -44,7 +45,7 @@
         <div class="comment">
           <div class="comment_head">
             <div class="comment_autor"><p><?php echo  $row['name']?></p></div>
-            <div class="comment_time"><p><?php echo  date("h:i",strtotime($row['datetime']))?></p></div>
+            <div class="comment_time"><p><?php echo  date("H:i",strtotime($row['datetime']))?></p></div>
             <div class="comment_date"><p><?php echo  date("d.m.y",strtotime($row['datetime']))?></p></div>
             <div class="clear"></div>
           </div>
@@ -81,8 +82,5 @@
         <div class="clear"></div>
       </div>
     </footer>
-
-
-    <script src="scripts.js"></script>
   </body>
 </html>
