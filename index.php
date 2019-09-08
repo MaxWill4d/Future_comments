@@ -38,7 +38,7 @@
     <content>
       <div class="mid">
         <?php
-          $result = mysqli_query($link, "SELECT * FROM comments ORDER BY id DESC" );
+          $result = mysqli_query($link, "SELECT * FROM comments ORDER BY id DESC");
           while($row=mysqli_fetch_array($result)) {
          ?>
         <div class="comment">
