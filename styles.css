@@ -1,0 +1,205 @@
+*{
+  margin:0;
+  padding: 0;
+}
+
+a{
+  color: #000;
+}
+
+body{
+  font-family: 'Roboto', sans-serif;
+  background: #eeeeee;
+
+}
+
+header{
+  background: #f9f9f9;
+  margin-bottom: 22px;
+}
+
+.clear{
+  clear: both;
+}
+
+.line{
+  border-bottom: 1px solid #d4d4d4;
+}
+
+.outline{
+  background-image: url(img/bg_header.png);
+  height: 9px;
+  position: relative;
+  bottom: -9px;
+}
+
+
+.mid{
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 23px 10px;
+}
+
+.info{
+  float: left;
+}
+
+.info p{
+  margin-top: 15px;
+  font-size: 12px;
+}
+
+h1{
+  margin-top: 60px;
+  clear: left;
+  font-size: 48px;
+  float: left;
+  font-weight: normal;
+}
+
+h2{
+  margin: 25px 0;
+}
+
+input[type=text]{
+  background: #eeeeee;
+  font-size: 14px;
+  padding: 1px 15px;
+  border: 2px solid #000;
+  border-radius: 5px;
+  width: 426px;
+  height: 40px;
+  margin: 15px 0 22px 0;
+}
+
+input[type="text"]:focus {
+  background:  #fff;
+  border: 2px solid #fff;
+  border-radius: 5px;
+}
+
+textarea{
+  background: #eeeeee;
+  font-size: 14px;
+  padding: 12px 15px;
+  border: 2px solid #000;
+  border-radius: 5px;
+  width: 426px;
+  height: 110px;
+  margin: 15px 0 22px 0;
+}
+
+textarea:focus {
+  background:  #fff;
+  border: 2px solid #fff;
+  border-radius: 5px;
+}
+
+
+input[type=submit]{
+  background: #eeeeee;
+  border: 2px solid #000;
+  border-radius: 5px;
+  float: right;
+  font-size: 18px;
+  height: 42px;
+  width: 130px;
+}
+
+input[type="submit"]:focus {
+  background:  #fff;
+  border: 2px solid #fff;
+  border-radius: 5px;
+}
+
+
+
+
+.header_logo{
+  float: right;
+}
+
+
+.comment{
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.comment_head{
+  margin-bottom: 16px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.comment_autor{
+  font-weight: bold;
+  float: left;
+  width: 85px;
+  font-size: 16px;
+}
+
+.comment_text{
+  font-size: 14px;
+}
+
+.comment_time, .comment_date{
+  float: left;
+  margin-left: 10px;
+  font-size: 10.62px;
+}
+
+#new_comment{
+  width: 460px;
+
+}
+
+
+
+
+footer{
+  background: #f9f9f9;
+}
+
+.logo_mini img {
+  width: 101px;
+  height: 106px;
+}
+
+.logo_mini{
+  float: left;
+  margin-right: 37px;
+}
+
+
+@media screen and (max-width: 700px){
+  .info{
+   text-align: center;
+   float: none;
+  }
+  .header_logo{
+   text-align: center;
+   float: none;
+   margin-top: 15px;
+  }
+  h1 {
+    text-align: center;
+    width: 100%;
+  }
+  .logo_mini {
+    float: none;
+    text-align: center;
+    width: 100%;
+  }
+  #new_comment{
+    width: 100%;
+  }
+
+  input[type=text]{
+    width: calc(100% - 34px);
+  }
+  textarea{
+    width: calc(100% - 34px);
+  }
+
+}
